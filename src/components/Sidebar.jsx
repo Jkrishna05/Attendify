@@ -9,7 +9,7 @@ export default function Sidebar({ isOpen = false, onClose = () => {} }) {
       aria-hidden={!isOpen}
     >
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-xl font-bold text-emerald-400">EduTrack</h1>
+        <h1 className="text-xl font-bold text-emerald-400">Attendify</h1>
         <button
           className="md:hidden p-1 rounded bg-zinc-800"
           onClick={onClose}
