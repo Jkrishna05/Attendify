@@ -32,21 +32,21 @@ export default function StudentForm({ setStudents }) {
       <div className="grid md:grid-cols-3 gap-4">
         <input
           placeholder="Student Name"
-          className="bg-zinc-900/80 border border-zinc-800 px-3 py-2 rounded-xl text-sm text-white outline-none focus:ring-2 focus:ring-emerald-500 w-[60%] sm:w-[90%]"
+          className="bg-zinc-900/80 border border-zinc-800 px-3 py-2 rounded-xl text-sm text-white outline-none focus:ring-2 focus:ring-emerald-500 w-[80%] sm:w-[90%]"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
 
         <input
           placeholder="Roll No"
-          className="bg-zinc-900/80 border border-zinc-800 px-3 py-2 rounded-xl text-sm text-white outline-none focus:ring-2 focus:ring-emerald-500 w-[60%] sm:w-[90%]"
+          className="bg-zinc-900/80 border border-zinc-800 px-3 py-2 rounded-xl text-sm text-white outline-none focus:ring-2 focus:ring-emerald-500 w-[80%] sm:w-[90%]"
           value={roll}
           onChange={(e) => setRoll(e.target.value)}
         />
 
         <button
           onClick={addStudent}
-          className="flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/90 hover:bg-emerald-400 text-black text-sm font-semibold transition shadow w-[60%] sm:w-[90%]"
+          className="flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/90 hover:bg-emerald-400 text-black text-sm font-semibold transition shadow w-[80%] sm:w-[90%]"
         >
           <UserPlus size={16} /> Add Student
         </button>
