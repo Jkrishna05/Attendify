@@ -21,14 +21,14 @@ export default function StudentForm({ setStudents }) {
   };
 
   return (
-    <div className="w-[85%] sm:w-[90%] bg-zinc-950/70 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-lg p-6">
-      {/* Header */}
+    <div className="w-[80%] sm:w-[90%] bg-zinc-950/70 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-lg p-6">
+      
       <div className="flex items-center gap-2 mb-5">
         <UserPlus className="text-emerald-400" size={20} />
         <h3 className="text-lg font-semibold text-white">Add Student</h3>
       </div>
 
-      {/* Form */}
+      
       <div className="grid md:grid-cols-3 gap-4">
         <input
           placeholder="Student Name"
