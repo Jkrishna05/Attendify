@@ -5,4 +5,4 @@ export default function Header({ title }) {
       <p className="text-zinc-400 text-sm">Modern Student Management System</p>
     </div>
   );
-}
+} 

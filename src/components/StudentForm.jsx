@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { UserPlus } from "lucide-react";
 
 export default function StudentForm({ setStudents }) {
   const [name, setName] = useState("");
@@ -6,37 +7,48 @@ export default function StudentForm({ setStudents }) {
 
   const addStudent = () => {
     if (!name || !roll) return;
-    setStudents(prev => [...prev, {
-      id: Date.now(),
-      name,
-      roll,
-      joinedAt: new Date().toLocaleString()
-    }]);
-    setName(""); setRoll("");
+    setStudents((prev) => [
+      ...prev,
+      {
+        id: Date.now(),
+        name,
+        roll,
+        joinedAt: new Date().toLocaleString(),
+      },
+    ]);
+    setName("");
+    setRoll("");
   };
 
   return (
-    <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 mb-6 w-[60%] sm:w-[90%]">
-      <h3 className="font-semibold mb-4">Add Student</h3>
+    <div className="w-[60%] sm:w-[90%] bg-zinc-950/70 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-lg p-6">
+      {/* Header */}
+      <div className="flex items-center gap-2 mb-5">
+        <UserPlus className="text-emerald-400" size={20} />
+        <h3 className="text-lg font-semibold text-white">Add Student</h3>
+      </div>
 
-      <div className="flex flex-col md:flex-row gap-4">
+      {/* Form */}
+      <div className="grid md:grid-cols-3 gap-4">
         <input
           placeholder="Student Name"
-          className="bg-zinc-800 p-2 rounded w-[90%] sm:w-full"
+          className="bg-zinc-900/80 border border-zinc-800 px-3 py-2 rounded-xl text-sm text-white outline-none focus:ring-2 focus:ring-emerald-500"
           value={name}
-          onChange={e => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
         />
+
         <input
           placeholder="Roll No"
-          className="bg-zinc-800 p-2 rounded w-[90%] sm:w-full"
+          className="bg-zinc-900/80 border border-zinc-800 px-3 py-2 rounded-xl text-sm text-white outline-none focus:ring-2 focus:ring-emerald-500"
           value={roll}
-          onChange={e => setRoll(e.target.value)}
+          onChange={(e) => setRoll(e.target.value)}
         />
+
         <button
           onClick={addStudent}
-          className="bg-emerald-500 px-4 rounded font-semibold text-black w-[90%] sm:w-full md:w-auto"
+          className="flex items-center justify-center gap-2 px-4 py-2 rounded-xl bg-emerald-500/90 hover:bg-emerald-400 text-black text-sm font-semibold transition shadow"
         >
-          Add
+          <UserPlus size={16} /> Add Student
         </button>
       </div>
     </div>
