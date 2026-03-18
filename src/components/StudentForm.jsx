@@ -21,7 +21,7 @@ export default function StudentForm({ setStudents }) {
   };
 
   return (
-    <div className="w-[60%] sm:w-[90%] bg-zinc-950/70 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-lg p-6">
+    <div className="w-[80%] sm:w-[90%] bg-zinc-950/70 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-lg p-6">
       {/* Header */}
       <div className="flex items-center gap-2 mb-5">
         <UserPlus className="text-emerald-400" size={20} />
