@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Dashboard from "./Pages/Dashboard";
-import Students from "./Pages/Students";
-import Attendance from "./Pages/Attendance";
+import Dashboard from "./pages/Dashboard";
+import Students from "./pages/Students";
+import Attendance from "./pages/Attendance";
 
 export default function App() {
   const [students, setStudents] = useState(() => {
