@@ -9,7 +9,7 @@ export default function StudentTable({ students }) {
 
   return (
     <div className="bg-zinc-950/70 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-lg overflow-hidden  w-[60%] sm:w-[90%]">
-      {/* Header */}
+      
       <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-800">
         <h2 className="text-lg font-semibold text-white">Students</h2>
         <span className="text-xs text-zinc-400">
@@ -17,7 +17,7 @@ export default function StudentTable({ students }) {
         </span>
       </div>
 
-      {/* Table */}
+      
       <div className="overflow-x-auto">
         <table className="w-full min-w-[600px] text-sm">
           <thead className="bg-zinc-900/80 text-zinc-400">

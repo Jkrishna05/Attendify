@@ -11,13 +11,13 @@ export default function AttendanceTable({ students, attendance, setAttendance })
 
   return (
     <div className="w-[60%] sm:w-[90%] bg-zinc-950/70 backdrop-blur-xl border border-zinc-800 rounded-2xl shadow-lg overflow-hidden">
-      {/* Header */}
+      
       <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-800">
         <h2 className="text-lg font-semibold text-white">Attendance</h2>
         <span className="text-xs text-zinc-400">Live Marking</span>
       </div>
 
-      {/* Table */}
+    
       <div className="overflow-x-auto">
         <table className="w-full min-w-[650px] text-sm">
           <thead className="bg-zinc-900/80 text-zinc-400">
@@ -38,7 +38,7 @@ export default function AttendanceTable({ students, attendance, setAttendance })
                   key={s.id}
                   className="border-t border-zinc-800 hover:bg-zinc-900/50 transition"
                 >
-                  {/* Student */}
+                  
                   <td className="px-5 py-4 text-white font-medium">
                     {s.name}
                   </td>
@@ -58,7 +58,7 @@ export default function AttendanceTable({ students, attendance, setAttendance })
                       </button>
                     </div>
                   </td>
-                  {/* Status */}
+                  
                   <td className="px-5 py-4 text-center">
                     {record ? (
                       <span
@@ -75,7 +75,7 @@ export default function AttendanceTable({ students, attendance, setAttendance })
                     )}
                   </td>
 
-                  {/* Time */}
+                  
                   <td className="px-5 py-4 text-center text-zinc-400">
                     {record?.time || "--"}
                   </td>

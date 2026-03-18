@@ -14,7 +14,7 @@ export default function Sidebar({ isOpen = false, onClose = () => {} }) {
         isOpen ? "translate-x-0" : "-translate-x-full"
       } md:static md:translate-x-0 md:block`}
     >
-      {/* Header */}
+      
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-2xl font-bold tracking-tight text-white">
           <span className="text-emerald-400">Attend</span>ify
@@ -27,7 +27,7 @@ export default function Sidebar({ isOpen = false, onClose = () => {} }) {
         </button>
       </div>
 
-      {/* Navigation */}
+    
       <nav className="space-y-2">
         <NavLink
           to="/"
@@ -60,7 +60,7 @@ export default function Sidebar({ isOpen = false, onClose = () => {} }) {
         </NavLink>
       </nav>
 
-      {/* Bottom Card */}
+    
       <div className="absolute bottom-6 left-5 right-5 p-4 rounded-xl bg-gradient-to-br from-emerald-500/20 to-transparent border border-zinc-800">
         <p className="text-xs text-zinc-400">System Status</p>
         <p className="text-sm font-semibold text-emerald-400 mt-1">
